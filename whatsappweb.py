@@ -1,7 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import os
 
-web = webdriver.Chrome('/Users/ssvighnesh/chromedriver')
+web = webdriver.Chrome(os.getcwd() + '/chromedriver')
 web.get('http://web.whatsapp.com')
 name=input('enter the victim name:')
 message=input('enter ur message:')
